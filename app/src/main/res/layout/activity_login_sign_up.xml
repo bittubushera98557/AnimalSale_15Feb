@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:weightSum="100"
+    tools:context="com.example.lenovo.emptypro.Activities.LoginScreen">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/app_logo"
+        android:layout_weight="30"></ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:layout_margin="10dp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="10"
+   android:weightSum="100"
+    android:orientation="horizontal">
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+android:layout_weight="20"
+        />
+    <Button
+        android:id="@+id/btn_gotoLogin"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_rect_shape"
+        android:text="Login"
+        android:layout_weight="60"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/white"  />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:weightSum="100"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            />
+        <Button
+            android:id="@+id/btn_gotoSignup"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_rect_shape"
+      android:visibility="gone"
+            android:text="SignUp"
+            android:layout_weight="60"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/white"              />
+    </LinearLayout>
+</LinearLayout>

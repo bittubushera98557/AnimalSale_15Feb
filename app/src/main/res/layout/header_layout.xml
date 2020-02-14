@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:appCompat="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    app:popupTheme="@style/AppTheme.PopupOverlay"
+    android:weightSum="100">
+<ImageView
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="15"
+    appCompat:src="@drawable/ic_arrow"
+    android:rotation="180"
+    android:id="@+id/iv_back"
+    android:tint="@color/white"
+    android:layout_margin="3dp"/>
+    <TextView
+        android:layout_width="0dp"
+        android:text="title"
+android:textSize="18dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:id="@+id/tv_title" android:layout_weight="70"/>
+</LinearLayout>

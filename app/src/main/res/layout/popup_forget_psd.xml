@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="300dp"
+             android:layout_height="wrap_content"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:gravity="center"
+             android:layout_gravity="center"
+             android:orientation="vertical"
+             android:background="@drawable/round_rect_shape"
+             android:backgroundTint="@color/white"
+>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:padding="20dp"
+                  android:orientation="vertical"
+    >
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/colorBlack"
+                  android:layout_gravity="center"
+                  android:text="Forget Password "
+                  android:textSize="16sp"
+                  android:gravity="center"
+        />
+
+        <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_marginTop="20dp"
+                android:id="@+id/txtInptLyt_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_rect_black"
+                android:backgroundTint="@color/white"
+                 android:hint="Email or Phone"
+                android:textColorHint="#615959"
+                app:boxStrokeColor="@color/white">
+
+
+            <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:gravity="center|left"
+                    android:inputType="text"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+                android:id="@+id/tv_submitForgetPsd"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="50dp"
+                android:background="@drawable/round_rect_shape"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:hint="Submit"
+                android:textSize="22sp"
+                android:textColorHint="@color/colorPrimary"
+                app:boxStrokeColor="@color/white"
+        />
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="15dp">
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <ImageView android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:id="@+id/iv_close"
+               android:background="@drawable/com_facebook_close"
+               android:layout_gravity="right"
+               android:layout_marginTop="15dp"
+               android:layout_marginRight="15dp"
+
+    />
+<!--    <ProgressBar
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />-->
+</FrameLayout>

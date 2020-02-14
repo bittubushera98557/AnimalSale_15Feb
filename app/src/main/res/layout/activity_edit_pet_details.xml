@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+  android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.emptypro.Activities.EditPetDetails">
+    <include layout="@layout/header"/>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:id="@+id/scrVw_updatePet"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+android:orientation="vertical"
+    android:layout_margin="10dp"
+
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/round_edit_txt_shape"
+        android:orientation="horizontal"
+        android:backgroundTint="@color/lightGrey"
+        android:weightSum="100"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_mainCategory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:hint="Main Category"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_gravity="center"
+            android:gravity="left|center"
+            android:textColor="@color/colorBlack"
+            android:textSize="14dp"
+            app:boxStrokeColor="@color/white">
+        </TextView>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="20dp"
+            android:layout_weight="50"
+            android:layout_gravity="center|right"
+            android:rotation="90"
+            app:srcCompat="@drawable/ic_arrow"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/round_edit_txt_shape"
+      android:layout_marginTop="10dp"
+        android:backgroundTint="@color/lightGrey"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_subCategory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/grey"
+            android:layout_weight="50"
+            android:hint="Sub Category"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_gravity="center"
+            android:gravity="left|center"
+            android:textColor="@color/colorBlack"
+            android:textSize="14dp"
+            app:boxStrokeColor="@color/white">
+        </TextView>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="20dp"
+            android:layout_weight="50"
+            android:layout_gravity="center|right"
+            android:rotation="90"
+            app:srcCompat="@drawable/ic_arrow"
+            />
+    </FrameLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:id="@+id/txtInptLyt_PetName"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp"
+        android:background="@drawable/round_edit_txt_shape"
+        android:backgroundTint="@color/lightGrey"
+        android:hint="Pet Name"
+        android:visibility="gone"
+        android:textColorHint="#E28F76"
+        app:boxStrokeColor="@color/white">
+
+        <EditText
+            android:id="@+id/et_PetName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="14dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:id="@+id/txtInptLyt_Title"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="50dp"
+        android:background="@drawable/round_edit_txt_shape"
+        android:backgroundTint="@color/lightGrey"
+        android:textColorHint="#E28F76"
+        android:hint="Title"
+        android:visibility="gone"
+        app:boxStrokeColor="@color/white">
+
+        <EditText
+            android:id="@+id/et_Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="14dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:id="@+id/ll_Price"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:orientation="horizontal"
+            >
+            <CheckBox android:layout_width="0dp"
+                android:id="@+id/chkBox_dollar"
+                android:textColor="@color/colorBlack"
+                android:layout_height="match_parent"
+                android:checked="false"
+                android:layout_weight="50"
+                android:buttonTint="@color/colorBlack"
+                android:textSize="10dp"
+                android:text="In US Dollar"
+                />
+            <CheckBox android:layout_width="0dp"
+                android:id="@+id/chkBox_ruppess"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorBlack"
+                android:checked="false"
+                android:buttonTint="@color/colorBlack"
+                android:layout_weight="50"
+                android:textSize="10dp"
+                android:text="In Ruppess"
+                />
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:id="@+id/txtInptLyt_Price"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/round_edit_txt_shape"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/lightGrey"
+            android:textColorHint="#E28F76"
+            android:hint="Price"
+            app:boxStrokeColor="@color/white">
+
+            <EditText
+                android:id="@+id/et_Price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:id="@+id/txtInptLyt_petType"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/round_edit_txt_shape"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/lightGrey"
+            android:textColorHint="#E28F76"
+            android:hint="Pet Type"
+            android:visibility="gone"
+            app:boxStrokeColor="@color/white">
+
+            <EditText
+                android:id="@+id/et_petType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:id="@+id/txtInptLyt_breed"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/round_edit_txt_shape"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/lightGrey"
+        android:hint="Breed"
+        android:visibility="gone"
+        android:textColorHint="#E28F76"
+        app:boxStrokeColor="@color/white">
+
+        <EditText
+            android:id="@+id/et_breed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="14dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:id="@+id/txtInptLyt_age"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/round_edit_txt_shape"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/lightGrey"
+        android:textColorHint="#E28F76"
+        android:hint="Age"
+        android:visibility="gone"
+        app:boxStrokeColor="@color/white">
+
+        <EditText
+            android:id="@+id/et_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="14dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:id="@+id/txtInptLyt_desc"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/round_edit_txt_shape"
+        android:layout_marginTop="10dp"
+        android:hint="Add Description"
+        android:backgroundTint="@color/lightGrey"
+        android:maxLines="10"
+        android:textColorHint="#E28F76"
+        app:boxStrokeColor="@color/white">
+
+        <EditText
+            android:id="@+id/et_desc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:singleLine="false"
+            android:maxLines="10"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="14dp"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:minLines="6"
+
+            android:scrollbars="vertical"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:text="Enter Location Details"/>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:id="@+id/txtInptLyt_state"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/round_edit_txt_shape"
+        android:layout_marginTop="10dp"
+        android:hint="State"
+        android:backgroundTint="@color/lightGrey"
+        android:maxLines="10"
+        android:textColorHint="#E28F76"
+        app:boxStrokeColor="@color/white">
+
+        <EditText
+            android:id="@+id/et_state"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="14dp"
+            android:inputType="text"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <FrameLayout android:layout_width="match_parent"
+        android:background="@drawable/rounded_rect_black"
+        android:id="@+id/fl_city"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/lightGrey"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_height="50dp">
+     <!--   <TextView
+            android:id="@+id/tv_citySet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/lightGrey"
+            android:hint="Choose City"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_gravity="center"
+            android:gravity="left|center"
+            android:textColor="@color/colorBlack"
+            android:textSize="14dp"
+            android:textColorHint="#615959"
+            app:boxStrokeColor="@color/white">
+        </TextView>
+        -->
+
+        <LinearLayout
+             android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                android:drawableLeft="@drawable/ic_location"
+                android:inputType="textCapCharacters"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/spinner_city"
+           android:backgroundTint="#00000000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"></com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right|center"
+            android:tint="@color/colorAccent"
+            android:layout_marginRight="15dp"
+            android:rotation="90"
+            app:srcCompat="@drawable/ic_arrow"
+            />
+    </FrameLayout>
+
+
+
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:text="Want to show number on ads ?"
+        android:gravity="right"
+        />
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal"
+        android:gravity="right"
+        >
+        <CheckBox android:layout_width="wrap_content"
+            android:id="@+id/chkBox_yes"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Yes"/>
+        <CheckBox android:layout_width="wrap_content"
+            android:id="@+id/chkBox_no"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="No"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+       android:layout_gravity="center" android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="100">
+
+
+        <Button
+            android:id="@+id/btn_updatePet"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/round_rect_shape"
+            android:gravity="center"
+            android:text="Submit "
+android:backgroundTint="@color/grey"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+ />
+
+</LinearLayout>
+
+</ScrollView>
+</LinearLayout>

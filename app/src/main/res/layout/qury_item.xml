@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_query_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:weightSum="100">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    android:background="@color/grey"
+    android:layout_height="match_parent"
+android:padding="15dp"
+    >
+
+    <TextView
+        android:id="@+id/tv_petName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="5dp"
+        android:ellipsize="end"
+        android:text="petName"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_ownerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="5dp"
+        android:ellipsize="end"
+        android:text="ownerName"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"  />
+
+    <TextView
+        android:id="@+id/tv_InteresterName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="5dp"
+        android:ellipsize="end"
+        android:text="IntersterName"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"  />
+
+    <TextView
+        android:id="@+id/tv_queryId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="5dp"
+        android:ellipsize="end"
+        android:text="queryId"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"  />
+
+</LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:background="@color/white"
+android:id="@+id/fl_imageAndNumberForAdd"
+             android:layout_height="match_parent"
+ >
+<ScrollView android:layout_width="match_parent"
+          android:layout_marginBottom="50dp"
+            android:layout_height="match_parent">
+     <LinearLayout android:layout_width="match_parent"
+                  android:layout_margin="20dp"
+                  android:orientation="vertical"
+                  android:layout_height="match_parent">
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/tv_mobile"
+                  android:layout_gravity="right"
+                  android:text="sdf"
+                  android:textSize="16sp"
+                  android:textStyle="bold"
+                  android:gravity="right"
+                  android:textColor="@color/colorBlack"
+        />
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="right"
+                  android:layout_marginTop="10dp"
+                  android:text="Want to show number on ads ?"
+                  android:gravity="right"
+        />
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="right"
+                      android:orientation="horizontal"
+                      android:gravity="right"
+        >
+            <CheckBox android:layout_width="wrap_content"
+                  android:id="@+id/chkBox_yes"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="right"
+                      android:text="Yes"/>
+            <CheckBox android:layout_width="wrap_content"
+                      android:id="@+id/chkBox_no"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="right"
+                      android:text="No"/>
+    </LinearLayout>
+     <FrameLayout android:layout_width="match_parent"
+                   android:layout_height="100dp"
+     android:layout_marginTop="20dp"
+android:background="@drawable/round_rect_shape"
+android:padding="10dp"
+     >
+         <ImageView android:layout_width="100dp"
+           android:id="@+id/iv_addImg1"
+                 app:srcCompat="@drawable/ic_menu_gallery"
+                    android:layout_height="match_parent"/>
+
+         <TextView
+                 android:id="@+id/tv_chooseImg1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Choose 1st Image "
+                 android:background="@drawable/round_rect_shape"
+                 android:textColor="@color/colorAccent"
+                 android:backgroundTint="@color/lightGrey"
+                 android:padding="5dp"
+                 android:layout_gravity="center_vertical|right"
+                 android:gravity="center"
+         />
+
+     </FrameLayout>
+         <FrameLayout android:layout_width="match_parent"
+                      android:layout_height="100dp"
+                      android:layout_marginTop="20dp"
+                      android:background="@drawable/round_rect_shape"
+                      android:padding="10dp"
+         >
+             <ImageView android:layout_width="100dp"
+                        android:id="@+id/iv_addImg2"
+                        app:srcCompat="@drawable/ic_menu_gallery"
+                        android:layout_height="match_parent"/>
+
+             <TextView
+                     android:id="@+id/tv_chooseImg2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Choose 2nd Image "
+                     android:background="@drawable/round_rect_shape"
+                     android:textColor="@color/colorAccent"
+                     android:backgroundTint="@color/lightGrey"
+                     android:padding="5dp"
+                     android:layout_gravity="center_vertical|right"
+                     android:gravity="center"
+             />
+
+         </FrameLayout>
+         <FrameLayout android:layout_width="match_parent"
+                      android:layout_height="100dp"
+                      android:layout_marginTop="20dp"
+                      android:background="@drawable/round_rect_shape"
+                      android:padding="10dp"
+         >
+             <ImageView android:layout_width="100dp"
+                        android:id="@+id/iv_addImg3"
+                        app:srcCompat="@drawable/ic_menu_gallery"
+                        android:layout_height="match_parent"/>
+
+             <TextView
+                    android:id="@+id/tv_chooseImg3"
+                     android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Choose 3rd Image "
+          android:background="@drawable/round_rect_shape"
+               android:textColor="@color/colorAccent"
+                       android:backgroundTint="@color/lightGrey"
+                       android:padding="5dp"
+                       android:layout_gravity="center_vertical|right"
+                       android:gravity="center"
+             />
+         </FrameLayout>
+         <FrameLayout android:layout_width="match_parent"
+                      android:layout_height="100dp"
+                      android:layout_marginTop="20dp"
+                      android:background="@drawable/round_rect_shape"
+                      android:padding="10dp"
+         >
+             <ImageView android:layout_width="100dp"
+                        android:id="@+id/iv_addImg4"
+                        app:srcCompat="@drawable/ic_menu_gallery"
+                        android:layout_height="match_parent"/>
+
+             <TextView
+                     android:id="@+id/tv_chooseImg4"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Choose 4th Image "
+                     android:background="@drawable/round_rect_shape"
+                     android:textColor="@color/colorAccent"
+                     android:backgroundTint="@color/lightGrey"
+                     android:padding="5dp"
+                     android:layout_gravity="center_vertical|right"
+                     android:gravity="center"
+             />
+
+         </FrameLayout>
+         <FrameLayout android:layout_width="match_parent"
+             android:layout_height="100dp"
+             android:layout_marginTop="20dp"
+             android:background="@drawable/round_rect_shape"
+             android:padding="10dp"
+             >
+             <ImageView android:layout_width="100dp"
+                 android:id="@+id/iv_addImg5"
+                 app:srcCompat="@drawable/ic_menu_gallery"
+                 android:layout_height="match_parent"/>
+
+             <TextView
+                 android:id="@+id/tv_chooseImg5"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Choose 5th Image "
+                 android:background="@drawable/round_rect_shape"
+                 android:textColor="@color/colorAccent"
+                 android:backgroundTint="@color/lightGrey"
+                 android:padding="5dp"
+                 android:layout_gravity="center_vertical|right"
+                 android:gravity="center"
+                 />
+
+         </FrameLayout>
+
+         <FrameLayout android:layout_width="match_parent"
+             android:layout_height="100dp"
+             android:layout_marginTop="20dp"
+             android:background="@drawable/round_rect_shape"
+             android:padding="10dp"
+             >
+             <ImageView android:layout_width="100dp"
+                 android:id="@+id/iv_addImg6"
+                 app:srcCompat="@drawable/ic_menu_gallery"
+                 android:layout_height="match_parent"/>
+
+             <TextView
+                 android:id="@+id/tv_chooseImg6"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Choose 6th Image "
+                 android:background="@drawable/round_rect_shape"
+                 android:textColor="@color/colorAccent"
+                 android:backgroundTint="@color/lightGrey"
+                 android:padding="5dp"
+                 android:layout_gravity="center_vertical|right"
+                 android:gravity="center"
+                 />
+
+         </FrameLayout>
+
+         <FrameLayout android:layout_width="match_parent"
+             android:layout_height="100dp"
+             android:layout_marginTop="20dp"
+             android:background="@drawable/round_rect_shape"
+             android:padding="10dp"
+             >
+             <ImageView android:layout_width="100dp"
+                 android:id="@+id/iv_addImg7"
+                 app:srcCompat="@drawable/ic_menu_gallery"
+                 android:layout_height="match_parent"/>
+
+             <TextView
+                 android:id="@+id/tv_chooseImg7"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Choose 7th Image "
+                 android:background="@drawable/round_rect_shape"
+                 android:textColor="@color/colorAccent"
+                 android:backgroundTint="@color/lightGrey"
+                 android:padding="5dp"
+                 android:layout_gravity="center_vertical|right"
+                 android:gravity="center"
+                 />
+
+         </FrameLayout>
+
+         <FrameLayout android:layout_width="match_parent"
+             android:layout_height="100dp"
+             android:layout_marginTop="20dp"
+             android:background="@drawable/round_rect_shape"
+             android:padding="10dp"
+             >
+             <ImageView android:layout_width="100dp"
+                 android:id="@+id/iv_addImg8"
+                 app:srcCompat="@drawable/ic_menu_gallery"
+                 android:layout_height="match_parent"/>
+
+             <TextView
+                 android:id="@+id/tv_chooseImg8"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Choose 8th Image "
+                 android:background="@drawable/round_rect_shape"
+                 android:textColor="@color/colorAccent"
+                 android:backgroundTint="@color/lightGrey"
+                 android:padding="5dp"
+                 android:layout_gravity="center_vertical|right"
+                 android:gravity="center"
+                 />
+
+         </FrameLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp"/>
+     </LinearLayout>
+
+</ScrollView>
+    <TextView
+            android:id="@+id/tv_submitAds"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorAccent"
+            android:text="SUBMIT"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+    />
+</FrameLayout>

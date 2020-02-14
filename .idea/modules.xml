@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AnimalSale-master.iml" filepath="$PROJECT_DIR$/AnimalSale-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AnimalSale-master-activitiesAdded.iml" filepath="$PROJECT_DIR$/AnimalSale-master-activitiesAdded.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/AnimalSale-master-activitiesAdded-app.iml" filepath="$PROJECT_DIR$/app/AnimalSale-master-activitiesAdded-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AnimalSale_14Feb.iml" filepath="$PROJECT_DIR$/AnimalSale_14Feb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AnimalSale_16_jan_02.iml" filepath="$PROJECT_DIR$/AnimalSale_16_jan_02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AnimalSale_16_jan_04-master.iml" filepath="$PROJECT_DIR$/AnimalSale_16_jan_04-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/AnimalSale_16_jan_04-master-app.iml" filepath="$PROJECT_DIR$/app/AnimalSale_16_jan_04-master-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/AnimalSale_16_jan_04-master11.iml" filepath="$PROJECT_DIR$/.idea/AnimalSale_16_jan_04-master11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AnimalSale_16_jan_04-master11-master.iml" filepath="$PROJECT_DIR$/AnimalSale_16_jan_04-master11-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/AnimalSale_16_jan_04-master11-master-app.iml" filepath="$PROJECT_DIR$/app/AnimalSale_16_jan_04-master11-master-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AnimalSale_18_jan-master.iml" filepath="$PROJECT_DIR$/AnimalSale_18_jan-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/AnimalSale_18_jan-master-app.iml" filepath="$PROJECT_DIR$/app/AnimalSale_18_jan-master-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/AnimalSale_1_feb-master.iml" filepath="$PROJECT_DIR$/.idea/AnimalSale_1_feb-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AnimalSale_1_feb_eve.iml" filepath="$PROJECT_DIR$/AnimalSale_1_feb_eve.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/AnimalSale_1_feb_eve-app.iml" filepath="$PROJECT_DIR$/app/AnimalSale_1_feb_eve-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/AnimalSale_20Jan.iml" filepath="$PROJECT_DIR$/.idea/AnimalSale_20Jan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AnimalSale_20Jan-master.iml" filepath="$PROJECT_DIR$/AnimalSale_20Jan-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/AnimalSale_20Jan-master-app.iml" filepath="$PROJECT_DIR$/app/AnimalSale_20Jan-master-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/AnimalSale_20Jan-master-master.iml" filepath="$PROJECT_DIR$/.idea/AnimalSale_20Jan-master-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AnimalSale_21jan.iml" filepath="$PROJECT_DIR$/AnimalSale_21jan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/AnimalSale_21jan-app.iml" filepath="$PROJECT_DIR$/app/AnimalSale_21jan-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/AnimalSale_21jan-master.iml" filepath="$PROJECT_DIR$/.idea/AnimalSale_21jan-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AnimalSale_23_Jan-master.iml" filepath="$PROJECT_DIR$/AnimalSale_23_Jan-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/AnimalSale_23_Jan-master-app.iml" filepath="$PROJECT_DIR$/app/AnimalSale_23_Jan-master-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/AnimalSale_24.iml" filepath="$PROJECT_DIR$/.idea/AnimalSale_24.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AnimalSale_24-master.iml" filepath="$PROJECT_DIR$/AnimalSale_24-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/AnimalSale_24-master-app.iml" filepath="$PROJECT_DIR$/app/AnimalSale_24-master-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AnimalSale_29-Chat-master.iml" filepath="$PROJECT_DIR$/AnimalSale_29-Chat-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/AnimalSale_29-Chat-master-app.iml" filepath="$PROJECT_DIR$/app/AnimalSale_29-Chat-master-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/AnimalSale_29-master.iml" filepath="$PROJECT_DIR$/.idea/AnimalSale_29-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/AnimalSale_30-Chat.iml" filepath="$PROJECT_DIR$/.idea/AnimalSale_30-Chat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AnimalSale_30-Chat-master.iml" filepath="$PROJECT_DIR$/AnimalSale_30-Chat-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/AnimalSale_30-Chat-master-app.iml" filepath="$PROJECT_DIR$/app/AnimalSale_30-Chat-master-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/AnimalSale_31-Chat.iml" filepath="$PROJECT_DIR$/.idea/AnimalSale_31-Chat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AnimalSale_31_eve.iml" filepath="$PROJECT_DIR$/AnimalSale_31_eve.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/AnimalSale_31_eve-app.iml" filepath="$PROJECT_DIR$/app/AnimalSale_31_eve-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/AnimalSale_4_feb_eve.iml" filepath="$PROJECT_DIR$/.idea/AnimalSale_4_feb_eve.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AnimalSale_7FebEve.iml" filepath="$PROJECT_DIR$/AnimalSale_7FebEve.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/AnimalSale_7FebEve-app.iml" filepath="$PROJECT_DIR$/app/AnimalSale_7FebEve-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>

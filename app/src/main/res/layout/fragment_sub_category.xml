@@ -1,0 +1,69 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.emptypro.Fragments.SubCategory">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:weightSum="100">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+           android:id="@+id/iv_back"
+                 app:srcCompat="@drawable/ic_arrow"
+                 android:rotation="180"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="90"
+                android:gravity="center_vertical"
+               android:textSize="15dp"
+                android:text="Current Location"
+                android:layout_marginLeft="15dp"
+                />
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey"
+            />
+
+<LinearLayout
+    android:layout_width="match_parent"
+  android:orientation="vertical"
+    android:layout_height="0dp"
+    android:layout_weight="92"
+>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No Data Found"
+        android:id="@+id/tv_noData"
+       android:gravity="center"
+        android:textSize="16dp"
+       android:textColor="@color/colorPrimary" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv_subCateList"
+        />
+</LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

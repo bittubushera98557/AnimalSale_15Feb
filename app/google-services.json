@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "594975082361",
+    "firebase_url": "https://vlovepetss-7152c.firebaseio.com",
+    "project_id": "vlovepetss-7152c",
+    "storage_bucket": "vlovepetss-7152c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594975082361:android:523fccd52081860b",
+        "android_client_info": {
+          "package_name": "com.bittu.vlovepets"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "594975082361-72s6j0gjvndi1blvhv1dldkdmo82br34.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bittu.vlovepets",
+            "certificate_hash": "a057a08d9e05d105f35c20578edbaee0509f9aa6"
+          }
+        },
+        {
+          "client_id": "594975082361-a4t56lrvvqvpl843tfpjiubd4cefpjv0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bittu.vlovepets",
+            "certificate_hash": "534143ab7198d3f9ce6e12582b683b81e6605cb1"
+          }
+        },
+        {
+          "client_id": "594975082361-67un1ncjii4ja03lv9jssk456bhtbels.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI1L4n8dVixPHWHMxGKIwYgVwpQfeU2q0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "594975082361-67un1ncjii4ja03lv9jssk456bhtbels.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

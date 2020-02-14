@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_marginTop="4dp"
+              android:orientation="vertical"
+              android:layout_height="wrap_content">
+
+
+    <LinearLayout
+            android:id="@+id/ll_recieveMsg"
+            android:layout_width="match_parent"
+            android:layout_marginRight="40dp"
+            android:layout_height="wrap_content"
+    >
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <com.example.lenovo.emptypro.Utils.CircleImageView
+          android:id="@+id/iv_oppositUserImg"
+          android:layout_width="20dp"
+                    android:src="@drawable/ic_chat"
+                    android:layout_height="20dp"
+                    android:layout_margin="3dp"/>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/tv_recievedMsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_edit_txt_shape"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="This is recieved message"
+                        android:backgroundTint="@color/white"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14dp"
+                />
+                <TextView
+                        android:id="@+id/tv_recievedTm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thu 3:09"
+                        android:textColor="#777777"
+                        android:textSize="8dp"
+                />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:id="@+id/ll_sentMsg"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_height="wrap_content"
+    >
+        <LinearLayout
+                android:layout_width="match_parent"
+ android:layout_gravity="right"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:layout_marginRight="3dp"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/tv_sentMsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_edit_txt_shape"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="This is my message"
+                    android:backgroundTint="#FFC3BB"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14dp"
+            />
+            <TextView
+                    android:id="@+id/tv_sentTm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thu 3:09"
+                    android:textColor="#777777"
+                    android:textSize="8dp"
+            />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

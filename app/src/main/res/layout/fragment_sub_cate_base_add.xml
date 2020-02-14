@@ -1,0 +1,262 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:id="@+id/fl_subCateBaseAdd"
+    tools:context="com.example.lenovo.emptypro.Fragments.SubCateBaseAdd">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:padding="3dp"
+            android:weightSum="100">
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="80"
+  android:orientation="horizontal"
+    android:id="@+id/ll_editLoc"
+
+    >
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:padding="5dp"
+        android:tint="@color/grey"
+        app:srcCompat="@drawable/ic_filter" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="70"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="60"
+                android:gravity="center_vertical"
+                android:text="Filter By Location"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="40"
+                android:drawableLeft="@drawable/ic_edit"
+                android:text="Edit"
+                android:drawablePadding="3dp"
+
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_subCatFilteredLoc"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:text="No Choosed Location"
+            android:textColor="@color/colorBlack"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+            <TextView
+           android:id="@+id/tv_resetLoc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:text="RESET"
+                 android:layout_gravity="bottom|right"
+                android:gravity="right|bottom"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                />
+
+        </LinearLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/tvNoData"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="No Data Found"
+                    android:textColor="@color/colorPrimary"
+                    android:visibility="gone" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_adverLst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+<LinearLayout
+    android:id="@+id/ll_filters"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:visibility="gone"
+    android:weightSum="100"
+    android:background="#83505050"
+    android:orientation="vertical"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="4">
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:background="@color/white"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:padding="3dp"
+       >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="100">
+         <FrameLayout
+       android:layout_gravity="center"      android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <TextView
+
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:padding="10dp"
+                 android:gravity="center"
+                 android:text="Choose Filter Type"
+                 android:textColor="@color/colorAccent"
+                 android:textSize="14dp"
+                 android:textStyle="bold"
+                 />
+<ImageView
+ android:id="@+id/iv_close_filter"   android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_gravity="right"
+android:layout_marginRight="5dp"
+    android:background="@drawable/com_facebook_close"
+    />
+         </FrameLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="@color/grey"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+        android:id="@+id/tv_filterByCurLoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+android:padding="10dp"
+                android:gravity="center_vertical"
+                android:text="Use Current Location"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/ic_my_location"
+                android:drawablePadding="8dp"
+                />
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:background="@color/colorBlack"
+android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    />
+            <LinearLayout
+                android:id="@+id/linear"
+             android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+               android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.5"
+              android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/ic_location"
+                    android:inputType="textCapCharacters"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/spinner_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"></com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_filterByOtherCity"
+                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center_vertical"
+               android:visibility="gone" android:text="Use Another City"
+                android:textColor="@color/colorBlack"
+           android:drawableLeft="@drawable/ic_location"
+               android:drawablePadding="8dp"
+                android:textSize="14dp"
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</FrameLayout>

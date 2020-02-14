@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+     android:background="@color/white"
+             android:layout_width="match_parent"
+        android:id="@+id/fl_subCateForAdd"
+             android:layout_height="match_parent"
+             tools:context=".Fragments.SellModule.SubCatFragForAdd">
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:layout_width="match_parent"
+    android:id="@+id/swipe_refresh"
+    android:layout_height="match_parent"
+>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:orientation="vertical"
+        >
+        <FrameLayout android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="8"
+     android:weightSum="100"
+            >
+
+            <TextView
+                android:id="@+id/tv_choosedMainCat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Title"
+                android:layout_marginLeft="20dp"
+                android:textSize="14dp"
+                android:textStyle="bold"
+
+                android:textColor="@color/colorBlack"
+
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/tv_skipCat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:text="   SKIP   "
+                android:layout_marginRight="5dp"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:padding="3dp"
+
+                android:background="@drawable/rounded_rect_black"
+                android:textColor="@color/colorAccent"
+                android:gravity="right"
+                />
+
+        </FrameLayout>
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_rect_black"
+            >
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/spinner_subCat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                ></com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+    android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_weight="86">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_subCatForAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tvNoData"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:text="No Data Found"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</FrameLayout>

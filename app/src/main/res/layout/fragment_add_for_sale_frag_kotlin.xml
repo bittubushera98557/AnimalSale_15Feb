@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/fl_frag_add_for_sale"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.emptypro.Fragments.AddForSaleFragKotlin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="100"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:text="Choose A Category For Upload Your Pet"
+            android:layout_gravity="center"
+             android:gravity="center"
+            android:layout_marginBottom="10dp"
+android:layout_marginTop="10dp"            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorBlack"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+          android:orientation="vertical"
+            android:layout_height="wrap_content"
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="match_parent"
+                android:id="@+id/rv_mainCatForSale"
+              />  >
+<TextView
+    android:layout_width="match_parent"
+    android:text="No data found"
+    android:gravity="center"
+    android:layout_height="match_parent"
+   android:id="@+id/tvNoData" />
+
+
+        </LinearLayout>
+</LinearLayout>
+</FrameLayout>

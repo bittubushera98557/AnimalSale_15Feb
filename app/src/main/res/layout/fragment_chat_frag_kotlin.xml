@@ -1,0 +1,89 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.emptypro.Fragments.ChatFragKotlin">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+    android:orientation="vertical"
+       android:layout_height="match_parent">
+
+       <LinearLayout android:layout_width="match_parent"
+           android:layout_height="0.5dp"
+           ></LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           >
+           <TextView
+               android:id="@+id/tv_sentQueries"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Sent Messages"
+               android:layout_gravity="center"
+               android:gravity="center"
+               android:textSize="18dp"
+               android:textColor="@color/colorAccent"
+               android:paddingTop="5dp"
+               android:paddingBottom="5dp"
+               android:backgroundTint="@color/white"
+               android:background="@drawable/round_edit_txt_shape"
+               android:layout_weight="1"      android:layout_margin="2dp" />
+           <TextView
+               android:id="@+id/tv_recievedQueries"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Recieved Messages"
+               android:layout_gravity="center"
+               android:gravity="center"
+               android:textSize="18dp"
+               android:textColor="@color/grey"
+               android:paddingTop="5dp"
+               android:paddingBottom="5dp"
+               android:backgroundTint="@color/white"
+               android:background="@drawable/round_edit_txt_shape"
+               android:layout_weight="1"   android:layout_margin="2dp" />
+       </LinearLayout>
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="0.5dp"
+           android:layout_margin="3dp"
+           android:background="@color/colorAccent"/>
+       <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+           android:id="@+id/swipe_refresh"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical" >
+
+               <TextView
+                   android:id="@+id/tv_noData"   android:layout_width="match_parent"
+                   android:layout_gravity="center"
+                   android:visibility="gone"
+                   android:gravity="center" android:layout_height="match_parent"
+                   android:text="No Record Found" />
+
+               <androidx.recyclerview.widget.RecyclerView
+                   android:id="@+id/rv_petQueries"
+android:visibility="visible"
+                   android:layout_width="match_parent"
+
+                   android:layout_height="wrap_content">
+
+
+               </androidx.recyclerview.widget.RecyclerView>
+
+
+           </LinearLayout>
+       </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+   </LinearLayout>
+
+</FrameLayout>
